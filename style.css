@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Marcellus;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: rgb(43,38,145);
+    box-sizing: border-box;
+    border-style: solid;
+}
+.navbar img{
+    width: 10% 
+}
+.navbar a{
+    padding: 30px;
+    text-decoration: none;
+    color: rgb(43,38,145);
+}
+
+.navbar a:hover{
+    background-color: rgb(43,38,145);
+    color: white;
+}
+
+.cart{
+    background-color: rgb(43,38,145);
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.cartammount-text{
+    color: red;
+
+}
+                /* shopping cards */
+                
+.shop-items{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 223px 223px 223px 223px;
+    gap: 90px;
+    justify-content: center;
+}
+@media (max-width:1000px){
+    .shop-items{
+        grid-template-columns:  223px 223px
+    }
+}
+@media (max-width:500px){
+    .shopping-cards{
+        grid-template-columns:  223px 
+    }
+}
+.shop-item-title{
+    gap: 20px;
+    padding: 05px;
+}
+.shop-item img{
+    width: 220px;
+}
+.shop-item{
+    border: rgb(43,38,145);
+    border-style: solid;
+    justify-content: center;
+}
+.shop-item h3{
+    font-weight: 500;
+    color: rgb(43,38,145);
+    margin-left: 05%;
+}
+.shop-item h4{
+    font-weight: 300;
+    color: rgb(43,38,145);
+    margin-top: 20px;
+    margin-right: 40%;
+}
+
+.shop-item button{
+    border-style:1px solid;
+    border-color: white transparent;
+    background-color:rgb(43,38,145);
+    border-radius: 2px;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+.shop-item-details{
+    margin-right: 30%;
+}
+
+.cart-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: rgb(43,38,145);
+    box-sizing: border-box;
+    border-style: solid;
+    margin-top: 10%;
+}
+.cart-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border:rgb(43,38,145);
+    box-sizing: border-box;
+    border-style: solid;
+    margin-top: 2%;
+}
+.btn{
+    border-style:1px solid;
+    border-color: white transparent;
+    background-color:rgb(43,38,145);
+    border-radius: 2px;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 45%;
+    margin-bottom: 10px;
+}
+.like-button {
+    background-color: gray; /* Initial color */
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Smooth color transition */
+    margin-left: 50%;
+    }
+    
+    .like-button.liked {
+        background-color: red; /* Liked color */
+    }
